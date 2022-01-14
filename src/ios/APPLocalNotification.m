@@ -517,10 +517,8 @@
 
     if (options.silent) {
         completionHandler(UNNotificationPresentationOptionNone);
-    } else if (!isActive || options.priority > 0) {
-        completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert);
     } else {
-        completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound);
+        completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert);
     }
 }
 
